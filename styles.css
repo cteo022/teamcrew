@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* remove all padding and button style */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  align-items: center;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 350px 350px;
+  margin-bottom: 70px;
+  margin-top: 70px
+}
+
+body {
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20% 0 20%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2, h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: 'PT Serif';
+  transform: rotate(90deg);
+  transform-origin: left top;
+  position: absolute;
+  top: 0;
+  left: 112%;
+  width: 100%;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+p.desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.header, .description {
+  width: 100%;
+}
+
+.col-3 {
+  display: flex;
+  width: 180px;
+  height: 200px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile-2, .profile-5 {
+  margin: 80px 0px 0px 30%;
+}
+
+.profile-3, .profile-6 {
+  margin-left: 60%;
+}
+
+/* footer */
+.footer {
+  padding-bottom: 2%;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+.username {
+  font-weight: 700;
+}
+
+@media(max-width:1175px) {
+  body {
+    padding: 80px 15% 0 15%;
+  }
+
+  .description {
+    padding-left: 40px;
+  }
+}
+
+@media(max-width:900px){
+  h1 {
+    font-size: 30px;
+  }
+
+  h2, p.desc{
+    font-size: 15px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 450px 450px;
+    margin-bottom: 250px;
+    margin-top: 70px;
+  }
+
+  .profile{
+    margin: 0;
+  }
+
+  .profile-2, .profile-4, .profile-6{
+    margin: 70px 0 0 50%;
+  }
+
+  .col-3 {
+    display: flex;
+    width: 200px;
+  }
+
+}
+
+@media (max-width:750px) {
+  body {
+    padding: 20px 5% 0 5%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 450px 450px;
+    margin-bottom: 250px;
+    margin-top: 70px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .description {
+    padding: 40px 0 0 0;
+  }
+
+  .profile-2, .profile-4, .profile-6{
+    margin: 70px 0 0 20%;
+  }
+}
+
+@media (max-width:600px) {
+  .profile-2, .profile-4, .profile-6{
+    margin: 70px 0 0 15px;
+  }
+}
